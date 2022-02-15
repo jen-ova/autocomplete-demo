@@ -61,8 +61,8 @@
     border-top-width: 0;
     list-style: none;
     margin: auto;
-    max-height: 143px;
-    overflow-y: auto;
+    max-height: 6rem;
+    overflow-y: scroll;
     padding-left: 0;
     width: 90%;
   }
