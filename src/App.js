@@ -1,7 +1,7 @@
 import React from "react";
 import Autocomplete from "./components/Autocomplete";
 import AutocompleteProvider from "./components/store/AutocompleteProvider";
-import "./app.css";
+import "./App.css";
 
 const App = () => {
   return (
