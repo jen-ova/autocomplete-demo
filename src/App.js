@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Autocomplete from "./components/Autocomplete";
+import AutocompleteProvider from "./components/store/AutocompleteProvider";
+import "./app.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AutocompleteProvider>
+      <div className="wrapper">
+        <h1>React Autocomplete Demo</h1>
+        <h2>Search US states</h2>
+        <Autocomplete />
+      </div>
+    </AutocompleteProvider>
   );
-}
+};
 
 export default App;
